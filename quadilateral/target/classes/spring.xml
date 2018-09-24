@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="test" />
+
+    <bean id="square" class="test.Square">
+        <property name="p1" ref="p1"/>
+        <property name="p2" ref="p2"/>
+        <property name="p3" ref="p3"/>
+        <property name="p4" ref="p4"/>
+
+    </bean>
+
+    <bean id="p1" class="test.Point">
+        <property name="x" value="1"/>
+
+        <property name="y" value="2"/>
+    </bean>
+
+    <bean id="p2" class="test.Point">
+        <property name="x" value="3"/>
+
+        <property name="y" value="4"/>
+    </bean>
+
+    <bean id="p3" class="test.Point">
+        <property name="x" value="5"/>
+
+        <property name="y" value="6"/>
+    </bean>
+
+
+    <bean id="p4" class="test.Point">
+        <property name="x" value="7"/>
+
+        <property name="y" value="8"/>
+    </bean>
+
+
+
+</beans>
+
+
+
